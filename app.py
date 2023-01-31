@@ -26,7 +26,7 @@ mycursor = mydb.cursor()
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Generate dataset >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 def generate_dataset(nbr):
     face_classifier = cv2.CascadeClassifier(
-        r"C:\Users\Socio\Desktop\AttendanceHaarCascade\data\haarcascade_frontalface_default.xml")
+        r"C:\Users\Socio\Documents\GitHub\presence-face-recognition\data\haarcascade_frontalface_default.xml")
 
     def face_cropped(img):
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -164,7 +164,7 @@ def face_recognition():  # generate frame by frame from camera
         return img
 
     faceCascade = cv2.CascadeClassifier(
-        r"C:\Users\Socio\Desktop\AttendanceHaarCascade\data\haarcascade_frontalface_default.xml")
+        r"C:\Users\Socio\Documents\GitHub\presence-face-recognition\data\haarcascade_frontalface_default.xml")
     clf = cv2.face.LBPHFaceRecognizer_create()
     clf.read("classifier.xml")
 
